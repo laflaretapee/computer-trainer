@@ -1,0 +1,37 @@
+[
+  {
+    "level": 1,
+    "title": "Новичок",
+    "minXp": 0,
+    "maxXp": 99,
+    "nextXp": 100
+  },
+  {
+    "level": 2,
+    "title": "Пользователь ПК",
+    "minXp": 100,
+    "maxXp": 299,
+    "nextXp": 300
+  },
+  {
+    "level": 3,
+    "title": "Опытный практик",
+    "minXp": 300,
+    "maxXp": 599,
+    "nextXp": 600
+  },
+  {
+    "level": 4,
+    "title": "Мастер мыши и клавиатуры",
+    "minXp": 600,
+    "maxXp": 999,
+    "nextXp": 1000
+  },
+  {
+    "level": 5,
+    "title": "Гуру информатики",
+    "minXp": 1000,
+    "maxXp": null,
+    "nextXp": null
+  }
+]

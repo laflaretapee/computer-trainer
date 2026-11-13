@@ -1,0 +1,350 @@
+{
+  "1280x720": {
+    "viewport": {
+      "h": 577,
+      "screenH": 600,
+      "screenW": 800,
+      "w": 1248
+    },
+    "classes": {
+      "buttonCount": 5,
+      "buttons": [
+        {
+          "h": 84,
+          "w": 221.8125,
+          "x": 32,
+          "y": 94
+        },
+        {
+          "h": 84,
+          "w": 221.828125,
+          "x": 272.53125,
+          "y": 94
+        },
+        {
+          "h": 84,
+          "w": 221.828125,
+          "x": 513.078125,
+          "y": 94
+        },
+        {
+          "h": 84,
+          "w": 221.828125,
+          "x": 753.625,
+          "y": 94
+        },
+        {
+          "h": 84,
+          "w": 221.8125,
+          "x": 994.171875,
+          "y": 94
+        }
+      ],
+      "docH": 577,
+      "gridHeight": 84,
+      "gridWidth": 1184,
+      "gridX": 32,
+      "hasVerticalScroll": false,
+      "rowDistribution": [
+        5
+      ],
+      "winH": 577
+    },
+    "students": {
+      "cardCount": 15,
+      "cardHeight": 38,
+      "cardWidth": 284.765625,
+      "columns": 4,
+      "docH": 577,
+      "gridHeight": 196.90625,
+      "gridWidth": 1184,
+      "hasVerticalScroll": false,
+      "winH": 577
+    },
+    "menu_4": {
+      "cols": 4,
+      "gridH": 138,
+      "gridW": 1100,
+      "gridX": 74,
+      "hasVerticalScroll": false,
+      "isCentered": true,
+      "modH": 138,
+      "modW": 258.5,
+      "rows": 1
+    },
+    "menu_5": {
+      "distribution": [
+        4,
+        1
+      ],
+      "gridH": 314,
+      "gridW": 1100,
+      "gridX": 74,
+      "hasVerticalScroll": false,
+      "isCentered": true,
+      "modH": 154,
+      "modW": 258.5
+    },
+    "typing": {
+      "bodyClientH": 511,
+      "bodyScrollH": 511,
+      "docH": 577,
+      "hasBodyScroll": false,
+      "hasVerticalScroll": false,
+      "headerH": 66,
+      "kbH": 153,
+      "kbW": 580.0625,
+      "trainerH": 297.21875,
+      "winH": 577
+    },
+    "modal": {
+      "bodyClientH": 386,
+      "bodyHasOverflow": false,
+      "bodyScrollH": 386,
+      "boxBottom": 519.203125,
+      "boxClientH": 461,
+      "boxHasOverflow": false,
+      "boxScrollH": 461,
+      "boxTop": 57.796875,
+      "imgH": 259.625,
+      "imgW": 461.578125,
+      "modalDisplay": "flex",
+      "navH": 60,
+      "navIsSticky": true,
+      "notesH": 50.78125,
+      "winH": 577
+    }
+  },
+  "1366x768": {
+    "viewport": {
+      "h": 625,
+      "screenH": 600,
+      "screenW": 800,
+      "w": 1334
+    },
+    "classes": {
+      "buttonCount": 5,
+      "buttons": [
+        {
+          "h": 85,
+          "w": 224,
+          "x": 67,
+          "y": 94.5
+        },
+        {
+          "h": 85,
+          "w": 224,
+          "x": 311,
+          "y": 94.5
+        },
+        {
+          "h": 85,
+          "w": 224,
+          "x": 555,
+          "y": 94.5
+        },
+        {
+          "h": 85,
+          "w": 224,
+          "x": 799,
+          "y": 94.5
+        },
+        {
+          "h": 85,
+          "w": 224,
+          "x": 1043,
+          "y": 94.5
+        }
+      ],
+      "docH": 625,
+      "gridHeight": 85,
+      "gridWidth": 1200,
+      "gridX": 67,
+      "hasVerticalScroll": false,
+      "rowDistribution": [
+        5
+      ],
+      "winH": 625
+    },
+    "students": {
+      "cardCount": 15,
+      "cardHeight": 38,
+      "cardWidth": 305.5,
+      "columns": 4,
+      "docH": 625,
+      "gridHeight": 200,
+      "gridWidth": 1270,
+      "hasVerticalScroll": false,
+      "winH": 625
+    },
+    "menu_4": {
+      "cols": 4,
+      "gridH": 140.5,
+      "gridW": 1100,
+      "gridX": 117,
+      "hasVerticalScroll": false,
+      "isCentered": true,
+      "modH": 140.5,
+      "modW": 258.5,
+      "rows": 1
+    },
+    "menu_5": {
+      "distribution": [
+        4,
+        1
+      ],
+      "gridH": 319,
+      "gridW": 1100,
+      "gridX": 117,
+      "hasVerticalScroll": false,
+      "isCentered": true,
+      "modH": 156.5,
+      "modW": 258.5
+    },
+    "typing": {
+      "bodyClientH": 559,
+      "bodyScrollH": 559,
+      "docH": 625,
+      "hasBodyScroll": false,
+      "hasVerticalScroll": false,
+      "headerH": 66,
+      "kbH": 153.375,
+      "kbW": 599,
+      "trainerH": 299.375,
+      "winH": 625
+    },
+    "modal": {
+      "bodyClientH": 410,
+      "bodyHasOverflow": false,
+      "bodyScrollH": 410,
+      "boxBottom": 555.234375,
+      "boxClientH": 485,
+      "boxHasOverflow": false,
+      "boxScrollH": 485,
+      "boxTop": 69.765625,
+      "imgH": 281.25,
+      "imgW": 500,
+      "modalDisplay": "flex",
+      "navH": 60.25,
+      "navIsSticky": true,
+      "notesH": 52.71875,
+      "winH": 625
+    }
+  },
+  "1920x1080": {
+    "viewport": {
+      "h": 937,
+      "screenH": 600,
+      "screenW": 800,
+      "w": 1888
+    },
+    "classes": {
+      "buttonCount": 5,
+      "buttons": [
+        {
+          "h": 103.0625,
+          "w": 224,
+          "x": 344,
+          "y": 108.828125
+        },
+        {
+          "h": 103.0625,
+          "w": 224,
+          "x": 588,
+          "y": 108.828125
+        },
+        {
+          "h": 103.0625,
+          "w": 224,
+          "x": 832,
+          "y": 108.828125
+        },
+        {
+          "h": 103.0625,
+          "w": 224,
+          "x": 1076,
+          "y": 108.828125
+        },
+        {
+          "h": 103.0625,
+          "w": 224,
+          "x": 1320,
+          "y": 108.828125
+        }
+      ],
+      "docH": 937,
+      "gridHeight": 103.0625,
+      "gridWidth": 1200,
+      "gridX": 344,
+      "hasVerticalScroll": false,
+      "rowDistribution": [
+        5
+      ],
+      "winH": 937
+    },
+    "students": {
+      "cardCount": 15,
+      "cardHeight": 42.46875,
+      "cardWidth": 290.65625,
+      "columns": 6,
+      "docH": 937,
+      "gridHeight": 159.40625,
+      "gridWidth": 1824,
+      "hasVerticalScroll": false,
+      "winH": 937
+    },
+    "menu_4": {
+      "cols": 4,
+      "gridH": 169.9375,
+      "gridW": 1100,
+      "gridX": 394,
+      "hasVerticalScroll": false,
+      "isCentered": true,
+      "modH": 169.9375,
+      "modW": 258.5,
+      "rows": 1
+    },
+    "menu_5": {
+      "distribution": [
+        4,
+        1
+      ],
+      "gridH": 380.875,
+      "gridW": 1100,
+      "gridX": 394,
+      "hasVerticalScroll": false,
+      "isCentered": true,
+      "modH": 188.9375,
+      "modW": 258.5
+    },
+    "typing": {
+      "bodyClientH": 863,
+      "bodyScrollH": 863,
+      "docH": 937,
+      "hasBodyScroll": false,
+      "hasVerticalScroll": false,
+      "headerH": 74.09375,
+      "kbH": 201.359375,
+      "kbW": 605.46875,
+      "trainerH": 378.859375,
+      "winH": 937
+    },
+    "modal": {
+      "bodyClientH": 571,
+      "bodyHasOverflow": false,
+      "bodyScrollH": 571,
+      "boxBottom": 799.28125,
+      "boxClientH": 662,
+      "boxHasOverflow": false,
+      "boxScrollH": 662,
+      "boxTop": 137.703125,
+      "imgH": 421.625,
+      "imgW": 749.578125,
+      "modalDisplay": "flex",
+      "navH": 63.359375,
+      "navIsSticky": true,
+      "notesH": 63.0625,
+      "winH": 937
+    }
+  }
+}

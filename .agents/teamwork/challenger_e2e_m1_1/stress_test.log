@@ -1,0 +1,60 @@
+=== ADVERSARIAL STRESS TEST LOG ===
+Started: 2026-11-11T11:16:58.227Z
+
+
+================================================================
+Adversarial Stress Test Suite: tests/runner.js
+Project Root: C:\Users\dinar\.gemini\antigravity\scratch\computer-trainer
+Runner Path:  C:\Users\dinar\.gemini\antigravity\scratch\computer-trainer\tests\runner.js
+Date:         2026-11-11T11:16:58.233Z
+================================================================
+
+--- SUITE 1: CLI Flags & Options Robustness ---
+  [✔ PASS] Suite 1: CLI Flags > Invalid tier --tier 99 exits 1 with error message (code=1)
+  [✔ PASS] Suite 1: CLI Flags > Invalid tier string exits 1 (code=1)
+  [✔ PASS] Suite 1: CLI Flags > Dangling --tier flag exits 1 (code=1)
+  [✔ PASS] Suite 1: CLI Flags > Non-existent test file exits 1 (code=1)
+  [✔ PASS] Suite 1: CLI Flags > Valid --tier infra discovers and passes (code=0, dur=224ms)
+  [✔ PASS] Suite 1: CLI Flags > Valid --tier all executes and passes (code=0)
+  [✔ PASS] Suite 1: CLI Flags > Empty tier 1 exits 1 with descriptive error (code=1)
+  [✔ PASS] Suite 1: CLI Flags > Malformed regex in --filter exits 1 (code=1)
+  [✔ PASS] Suite 1: CLI Flags > Filter matching 0 tests handles cleanly (code=0)
+  [✔ PASS] Suite 1: CLI Flags > Filter matching specific test executes only matched test (code=0)
+  [✔ PASS] Suite 1: CLI Flags > --help and -h display menu and exit 0 (longCode=0, shortCode=0)
+  [✔ PASS] Suite 1: CLI Flags > Verbose flag -v runs cleanly and exits 0 (code=0)
+
+--- SUITE 2: Bail Flag Behavior ---
+  [✔ PASS] Suite 2: Bail Flag > Without --bail: all tests run including post-failure tests (code=1)
+  [✔ PASS] Suite 2: Bail Flag > With --bail: execution aborts immediately after failure (Test 3 never runs) (code=1)
+  [✔ PASS] Suite 2: Bail Flag > With short -b flag: execution aborts immediately after failure (code=1)
+  [✔ PASS] Suite 2: Bail Flag > Nested suite bail: aborts remaining sibling tests and child suites (code=1)
+  [✔ PASS] Suite 2: Bail Flag > Multi-file bail: subsequent test files are skipped entirely (code=1)
+
+--- SUITE 3: Timeout Behavior & Hang Resistance ---
+  [✔ PASS] Suite 3: Timeout > Async hanging test aborts at configured timeout (300ms) and does not hang (code=1, dur=390ms)
+  [✔ PASS] Suite 3: Timeout > --timeout=250 inline syntax properly respected (code=1, dur=327ms)
+  [✔ PASS] Suite 3: Timeout > Fast async test succeeds cleanly within timeout (code=0, dur=139ms)
+
+--- SUITE 4: Async Error Handling & Lifecycle Cleanup ---
+  [✔ PASS] Suite 4: Async Errors > beforeEach throw aborts test body and executes afterEach cleanup (code=1)
+  [✔ PASS] Suite 4: Async Errors > beforeEach timeout aborts test body and executes afterEach cleanup (code=1, dur=327ms)
+  [✔ PASS] Suite 4: Async Errors > Error in afterEach hook logged without crashing runner (code=0)
+  [✔ PASS] Suite 4: Async Errors > Syntax error in test file captured cleanly with exit code 1 (code=1)
+  [✔ PASS] Suite 4: Async Errors > Unhandled Promise rejection causes failure or warning (code=1)
+  [✔ PASS] Suite 4: Async Errors > Throwing null formats cleanly without crashing reporter (code=1, crashedReporter=false)
+  [✔ PASS] Suite 4: Async Errors > Throwing string preserves error message string in reporter (code=1, messagePreserved=true)
+  [✔ PASS] Suite 4: Async Errors > Completely empty test file executes safely with code 0 (code=0)
+
+--- SUITE 5: Concurrency & Deterministic Exit Codes ---
+  [✔ PASS] Suite 5: Concurrency > 10 parallel runner instances on passing suite all exit 0 deterministically (avg=387ms, allCode0=true)
+  [✔ PASS] Suite 5: Concurrency > 10 parallel runner instances on failing fixture all exit 1 deterministically (allCode1=true)
+  [✔ PASS] Suite 5: Determinism > 5 repeated sequential executions consistently yield exit code 0 (repeats=5)
+
+================================================================
+ADVERSARIAL STRESS TEST SUMMARY
+Total Scenarios:  31
+Passed:           31
+Failed:           0
+Overall Result:   ALL PASSED (VERIFIED)
+================================================================
+

@@ -1,0 +1,254 @@
+{
+  "timestamp": "2026-11-11T11:17:10.983Z",
+  "total": 45,
+  "passed": 45,
+  "failed": 0,
+  "suites": {
+    "assert": {
+      "passed": 27,
+      "failed": 0,
+      "total": 27,
+      "results": [
+        {
+          "name": "assertDeepEquals: Circular references in equal objects",
+          "passed": true,
+          "duration": 4
+        },
+        {
+          "name": "assertDeepEquals: Circular references in unequal objects throws AssertionError with diff",
+          "passed": true,
+          "duration": 2
+        },
+        {
+          "name": "assertDeepEquals: Deep nested arrays (100 levels)",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertDeepEquals: Deep nested arrays with difference at leaf throws",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "assertDeepEquals: NaN in nested structures",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertDeepEquals: Symbol properties on objects",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertDeepEquals: Distinct symbols with same description throw",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertDeepEquals: Date instances equality and inequality",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "assertDeepEquals: RegExp instances equality and inequality",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "assertDeepEquals: Maps with complex keys and values",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertDeepEquals: Sets with nested objects",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertThrows: Async function throwing after delay (awaiting)",
+          "passed": true,
+          "duration": 25
+        },
+        {
+          "name": "assertThrows: Rejected Promise with string primitive (no Error instance)",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "assertThrows: Rejected Promise with non-Error object",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertThrows: Synchronous function returning non-Promise throws AssertionError",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertThrows: Async function resolving instead of rejecting throws AssertionError",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertThrows: Throws when unexpected error type is thrown",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "assertEquals: Cyrillic Смирнов vs Latin Cмирнов divergence diff",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertEquals: Embedded middle Cyrillic vs Latin char divergence (e.g. Иванов vs Иванoв with Latin o)",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "assertBetween: Valid boundaries with Number.MAX_SAFE_INTEGER",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertBetween: Exceeding Number.MAX_SAFE_INTEGER throws AssertionError",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertBetween: Infinity as val throws AssertionError (requires finite numbers)",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertBetween: -Infinity as min throws AssertionError",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertBetween: NaN as val throws AssertionError",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertContains: Empty string in empty string and needle check",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "assertMatches: Regex matching with flags and multiline",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "assertCloseTo: Precision boundary near delta",
+          "passed": true,
+          "duration": 0
+        }
+      ]
+    },
+    "dom": {
+      "passed": 13,
+      "failed": 0,
+      "total": 13,
+      "results": [
+        {
+          "name": "Event Bubbling: 4-level nested hierarchy propagates child -> parent -> doc -> window",
+          "passed": true,
+          "duration": 3
+        },
+        {
+          "name": "Event Bubbling: stopPropagation() halts bubbling to ancestors",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "Adversarial Event: Multiple listeners on same node when stopPropagation() called",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "Adversarial Event: stopImmediatePropagation() method presence and execution",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "CSS Selectors: Direct child combinator with attributes (div.card > span[data-role=\"btn\"])",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "CSS Selectors: Comma list with different combinators",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "CSS Selectors: Deep descendant queries (div main section article p.lead span)",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "CSS Selectors: Pseudo-class :not(...) support check",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "Dataset: Multi-hyphen attribute data-student-first-name -> dataset.studentFirstName",
+          "passed": true,
+          "duration": 1
+        },
+        {
+          "name": "Dataset: Object.keys(element.dataset) enumeration",
+          "passed": true,
+          "duration": 0
+        },
+        {
+          "name": "localStorage: JSON array serialization (sync_queue), iteration, and removal",
+          "passed": true,
+          "duration": 3
+        },
+        {
+          "name": "localStorage: Collision with built-in Storage method names",
+          "passed": true,
+          "duration": 2
+        },
+        {
+          "name": "Online / Fetch Concurrency: Rapid toggles and 50 parallel fetches",
+          "passed": true,
+          "duration": 4
+        }
+      ]
+    },
+    "leak": {
+      "passed": 5,
+      "failed": 0,
+      "total": 5,
+      "results": [
+        {
+          "name": "Global Pollution: Single setup and teardown completely cleans up injected globals",
+          "passed": true,
+          "duration": 2
+        },
+        {
+          "name": "Lifecycle: 100 consecutive setup and teardown cycles",
+          "passed": true,
+          "duration": 5
+        },
+        {
+          "name": "Node 22 Navigator: Preserves native navigator behavior across setup/teardown",
+          "passed": true,
+          "duration": 2
+        },
+        {
+          "name": "Active Timers and Intervals: Teardown cancels pending timers without leak",
+          "passed": true,
+          "duration": 109
+        },
+        {
+          "name": "Memory Stability: Heap memory delta after 50 app stack loads",
+          "passed": true,
+          "duration": 282
+        }
+      ]
+    }
+  }
+}

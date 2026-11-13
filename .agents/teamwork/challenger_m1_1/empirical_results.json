@@ -1,0 +1,1077 @@
+{
+  "viewports_tested": 9,
+  "details": [
+    {
+      "name": "Standard Laptop 720p",
+      "viewport": "1280x720@1.0",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 290.296875,
+            "cardsCount": 15,
+            "colsInFirstRow": 4,
+            "docScrollW": 1246,
+            "hasHorizontalScroll": false,
+            "maxWidth": 290.296875,
+            "minWidth": 290.296875,
+            "winH": 576,
+            "winW": 1246
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 576,
+            "docScrollW": 1246,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 278.625,
+            "kbHeight": 128,
+            "kbVisibleInWin": true,
+            "winH": 576,
+            "winW": 1246
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 455.96875,
+            "modalClientH": 336,
+            "modalH": 335.9375,
+            "modalScrollH": 336,
+            "modalTop": 120.03125,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 230.03125,
+              "height": 53,
+              "left": 957.5,
+              "right": 1076.25,
+              "toJSON": {},
+              "top": 177.03125,
+              "width": 118.75,
+              "x": 957.5,
+              "y": 177.03125
+            },
+            "notesHeight": 37.6875,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 576,
+            "winW": 1246
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 69,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "69.12px",
+            "notesScrollH": 201
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 3121,
+                "thTop": 309,
+                "wrapTop": 308
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 1246,
+            "winW": 1246
+          }
+        }
+      }
+    },
+    {
+      "name": "Standard Laptop 768p",
+      "viewport": "1366x768@1.0",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 305.0229166666667,
+            "cardsCount": 15,
+            "colsInFirstRow": 4,
+            "docScrollW": 1332,
+            "hasHorizontalScroll": false,
+            "maxWidth": 305.03125,
+            "minWidth": 305.015625,
+            "winH": 624,
+            "winW": 1332
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 624,
+            "docScrollW": 1332,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 388.359375,
+            "kbHeight": 179.328125,
+            "kbVisibleInWin": true,
+            "winH": 624,
+            "winW": 1332
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 547.109375,
+            "modalClientH": 470,
+            "modalH": 470.21875,
+            "modalScrollH": 470,
+            "modalTop": 76.890625,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 193.125,
+              "height": 53,
+              "left": 1030.75,
+              "right": 1149.5,
+              "toJSON": {},
+              "top": 140.125,
+              "width": 118.75,
+              "x": 1030.75,
+              "y": 140.125
+            },
+            "notesHeight": 52.6875,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 624,
+            "winW": 1332
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 87,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "87.36px",
+            "notesScrollH": 273
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 338.46875,
+                "wrapTop": 337.46875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 338.46875,
+                "wrapTop": 337.46875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 338.46875,
+                "wrapTop": 337.46875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 338.46875,
+                "wrapTop": 337.46875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 3087,
+                "thTop": 338.46875,
+                "wrapTop": 337.46875
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 1332,
+            "winW": 1332
+          }
+        }
+      }
+    },
+    {
+      "name": "Full HD 1080p",
+      "viewport": "1920x1080@1.0",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 338,
+            "cardsCount": 15,
+            "colsInFirstRow": 4,
+            "docScrollW": 1886,
+            "hasHorizontalScroll": false,
+            "maxWidth": 338,
+            "minWidth": 338,
+            "winH": 936,
+            "winW": 1886
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 936,
+            "docScrollW": 1886,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 433.28125,
+            "kbHeight": 195.640625,
+            "kbVisibleInWin": true,
+            "winH": 936,
+            "winW": 1886
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 798.5,
+            "modalClientH": 661,
+            "modalH": 661.015625,
+            "modalScrollH": 661,
+            "modalTop": 137.484375,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 262.78125,
+              "height": 53,
+              "left": 1330.53125,
+              "right": 1449.28125,
+              "toJSON": {},
+              "top": 209.78125,
+              "width": 118.75,
+              "x": 1330.53125,
+              "y": 209.78125
+            },
+            "notesHeight": 63.03125,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 936,
+            "winW": 1886
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 120,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "120px",
+            "notesScrollH": 327
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 352.78125,
+                "wrapTop": 351.78125
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 352.78125,
+                "wrapTop": 351.78125
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 352.78125,
+                "wrapTop": 351.78125
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 352.78125,
+                "wrapTop": 351.78125
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 2869,
+                "thTop": 352.78125,
+                "wrapTop": 351.78125
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 1886,
+            "winW": 1886
+          }
+        }
+      }
+    },
+    {
+      "name": "16:10 Laptop/Desktop",
+      "viewport": "1440x900@1.0",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 323.5,
+            "cardsCount": 15,
+            "colsInFirstRow": 4,
+            "docScrollW": 1406,
+            "hasHorizontalScroll": false,
+            "maxWidth": 323.5,
+            "minWidth": 323.5,
+            "winH": 756,
+            "winW": 1406
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 756,
+            "docScrollW": 1406,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 403.109375,
+            "kbHeight": 183.421875,
+            "kbVisibleInWin": true,
+            "winH": 756,
+            "winW": 1406
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 645.8125,
+            "modalClientH": 536,
+            "modalH": 535.625,
+            "modalScrollH": 536,
+            "modalTop": 110.1875,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 228.796875,
+              "height": 53,
+              "left": 1093.25,
+              "right": 1212,
+              "toJSON": {},
+              "top": 175.796875,
+              "width": 118.75,
+              "x": 1093.25,
+              "y": 175.796875
+            },
+            "notesHeight": 56.84375,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 756,
+            "winW": 1406
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 106,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "105.84px",
+            "notesScrollH": 289
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 343.765625,
+                "wrapTop": 342.765625
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 343.765625,
+                "wrapTop": 342.765625
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 343.765625,
+                "wrapTop": 342.765625
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 343.765625,
+                "wrapTop": 342.765625
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 2995,
+                "thTop": 343.765625,
+                "wrapTop": 342.765625
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 1406,
+            "winW": 1406
+          }
+        }
+      }
+    },
+    {
+      "name": "Extreme Boundary Netbook",
+      "viewport": "1024x550@1.0",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 308.8802083333333,
+            "cardsCount": 15,
+            "colsInFirstRow": 3,
+            "docScrollW": 990,
+            "hasHorizontalScroll": false,
+            "maxWidth": 308.890625,
+            "minWidth": 308.875,
+            "winH": 406,
+            "winW": 990
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 406,
+            "docScrollW": 990,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 278,
+            "kbHeight": 128,
+            "kbVisibleInWin": true,
+            "winH": 406,
+            "winW": 990
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 347.171875,
+            "modalClientH": 288,
+            "modalH": 288.34375,
+            "modalScrollH": 288,
+            "modalTop": 58.828125,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 168.828125,
+              "height": 53,
+              "left": 733.5,
+              "right": 852.25,
+              "toJSON": {},
+              "top": 115.828125,
+              "width": 118.75,
+              "x": 733.5,
+              "y": 115.828125
+            },
+            "notesHeight": 37.6875,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 406,
+            "winW": 990
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 49,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "48.72px",
+            "notesScrollH": 246
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 3313,
+                "thTop": 309,
+                "wrapTop": 308
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 990,
+            "winW": 990
+          }
+        }
+      }
+    },
+    {
+      "name": "1920x1080 @ 125% Scale",
+      "viewport": "1536x864@1.25",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 281.6,
+            "cardsCount": 15,
+            "colsInFirstRow": 5,
+            "docScrollW": 1536,
+            "hasHorizontalScroll": false,
+            "maxWidth": 281.609375,
+            "minWidth": 281.59375,
+            "winH": 864,
+            "winW": 1536
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 864,
+            "docScrollW": 1536,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 412.453125,
+            "kbHeight": 180.78125,
+            "kbVisibleInWin": true,
+            "winH": 864,
+            "winW": 1536
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 741.96875,
+            "modalClientH": 620,
+            "modalH": 619.953125,
+            "modalScrollH": 620,
+            "modalTop": 122.015625,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 244.265625,
+              "height": 53,
+              "left": 1156.984375,
+              "right": 1275.734375,
+              "toJSON": {},
+              "top": 191.265625,
+              "width": 118.75,
+              "x": 1156.984375,
+              "y": 191.265625
+            },
+            "notesHeight": 61.3125,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 864,
+            "winW": 1536
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 120,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "120px",
+            "notesScrollH": 325
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 349.171875,
+                "wrapTop": 348.171875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 349.171875,
+                "wrapTop": 348.171875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 349.171875,
+                "wrapTop": 348.171875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 349.171875,
+                "wrapTop": 348.171875
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 2919,
+                "thTop": 349.171875,
+                "wrapTop": 348.171875
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 1536,
+            "winW": 1536
+          }
+        }
+      }
+    },
+    {
+      "name": "1920x1080 @ 150% Scale",
+      "viewport": "1280x720@1.5",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 292.48020833333334,
+            "cardsCount": 15,
+            "colsInFirstRow": 4,
+            "docScrollW": 1280,
+            "hasHorizontalScroll": false,
+            "maxWidth": 292.484375,
+            "minWidth": 292.46875,
+            "winH": 720,
+            "winW": 1280
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 720,
+            "docScrollW": 1280,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 397.734375,
+            "kbHeight": 182.03125,
+            "kbVisibleInWin": true,
+            "winH": 720,
+            "winW": 1280
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 617.0625,
+            "modalClientH": 514,
+            "modalH": 514.125,
+            "modalScrollH": 514,
+            "modalTop": 102.9375,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 220.75,
+              "height": 53,
+              "left": 985.25,
+              "right": 1104,
+              "toJSON": {},
+              "top": 167.75,
+              "width": 118.75,
+              "x": 985.25,
+              "y": 167.75
+            },
+            "notesHeight": 52.5,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 720,
+            "winW": 1280
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 101,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "100.8px",
+            "notesScrollH": 264
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 341.984375,
+                "wrapTop": 340.984375
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 341.984375,
+                "wrapTop": 340.984375
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 341.984375,
+                "wrapTop": 340.984375
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 341.984375,
+                "wrapTop": 340.984375
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 3020,
+                "thTop": 341.984375,
+                "wrapTop": 340.984375
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 1280,
+            "winW": 1280
+          }
+        }
+      }
+    },
+    {
+      "name": "1366x768 @ 125% Scale",
+      "viewport": "1093x614@1.25",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 342.2552083333333,
+            "cardsCount": 15,
+            "colsInFirstRow": 3,
+            "docScrollW": 1093,
+            "hasHorizontalScroll": false,
+            "maxWidth": 342.265625,
+            "minWidth": 342.25,
+            "winH": 614,
+            "winW": 1093
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 614,
+            "docScrollW": 1093,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 279.203125,
+            "kbHeight": 128,
+            "kbVisibleInWin": true,
+            "winH": 614,
+            "winW": 1093
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 480.34375,
+            "modalClientH": 347,
+            "modalH": 346.703125,
+            "modalScrollH": 347,
+            "modalTop": 133.640625,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 243.765625,
+              "height": 53,
+              "left": 823.625,
+              "right": 942.375,
+              "toJSON": {},
+              "top": 190.765625,
+              "width": 118.75,
+              "x": 823.625,
+              "y": 190.765625
+            },
+            "notesHeight": 37.6875,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 614,
+            "winW": 1093
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 70,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "70px",
+            "notesScrollH": 231
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 3094,
+                "thTop": 309,
+                "wrapTop": 308
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 1093,
+            "winW": 1093
+          }
+        }
+      }
+    },
+    {
+      "name": "1366x768 @ 150% Scale",
+      "viewport": "911x512@1.5",
+      "checks": {
+        "student_grid": {
+          "pass": true,
+          "metrics": {
+            "anyCardOverflowX": false,
+            "avgWidth": 284.2395833333333,
+            "cardsCount": 15,
+            "colsInFirstRow": 3,
+            "docScrollW": 911,
+            "hasHorizontalScroll": false,
+            "maxWidth": 284.25,
+            "minWidth": 284.234375,
+            "winH": 512,
+            "winW": 911
+          }
+        },
+        "typing_screen": {
+          "pass": true,
+          "metrics": {
+            "bodyOverflowY": "hidden",
+            "docScrollH": 512,
+            "docScrollW": 911,
+            "hasDocHScroll": false,
+            "hasDocVScroll": false,
+            "kbBottom": 278,
+            "kbHeight": 128,
+            "kbVisibleInWin": true,
+            "winH": 512,
+            "winW": 911
+          }
+        },
+        "modal": {
+          "pass": true,
+          "initial": {
+            "isModalBoxOverflowing": false,
+            "modalBottom": 415.015625,
+            "modalClientH": 318,
+            "modalH": 318.03125,
+            "modalScrollH": 318,
+            "modalTop": 96.984375,
+            "modalWithinWindow": true,
+            "navBarSticky": true,
+            "navButtonsVisible": true,
+            "nextRect": {
+              "bottom": 206.984375,
+              "height": 53,
+              "left": 682.75,
+              "right": 801.5,
+              "toJSON": {},
+              "top": 153.984375,
+              "width": 118.75,
+              "x": 682.75,
+              "y": 153.984375
+            },
+            "notesHeight": 37.6875,
+            "notesPresent": true,
+            "notesVisible": true,
+            "winH": 512,
+            "winW": 911
+          },
+          "stress": {
+            "modalWithinWindow": true,
+            "navBtnVisible": true,
+            "notesClientH": 61,
+            "notesHasInternalScroll": true,
+            "notesMaxHComputed": "61.44px",
+            "notesScrollH": 260
+          }
+        },
+        "teacher_table": {
+          "pass": true,
+          "measurements": {
+            "measurements": [
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 0,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 150,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 400,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 800,
+                "thTop": 309,
+                "wrapTop": 308
+              },
+              {
+                "deltaY": 1,
+                "isFirmlySticky": true,
+                "scrollTop": 3330,
+                "thTop": 309,
+                "wrapTop": 308
+              }
+            ],
+            "pageNoBlowout": true,
+            "pageW": 911,
+            "winW": 911
+          }
+        }
+      }
+    }
+  ],
+  "failures": []
+}

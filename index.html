@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тренажёр по информатике — 7 класс</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       #screen-login — Выбор роли
+  ══════════════════════════════════════════ -->
+  <div id="screen-login" class="screen active">
+    <div class="screen-center">
+      <div class="app-logo">
+        <span class="logo-icon">🖥️</span>
+        <h1 class="app-title">Тренажёр по информатике</h1>
+        <p class="app-subtitle">Интерактивный комплекс для 7-х классов</p>
+      </div>
+      <div class="role-buttons">
+        <button class="btn btn-primary btn-role" id="btn-student">
+          <span class="btn-icon">🎒</span>
+          <span>Я ученик</span>
+        </button>
+        <button class="btn btn-secondary btn-role" id="btn-teacher">
+          <span class="btn-icon">👨‍🏫</span>
+          <span>Учитель</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-teacher-login — Пароль учителя
+  ══════════════════════════════════════════ -->
+  <div id="screen-teacher-login" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-login">← Назад</button>
+    </div>
+    <div class="screen-center">
+      <div class="login-card">
+        <h2>🔐 Вход для учителя</h2>
+        <div class="form-group">
+          <label for="teacher-password">Пароль учителя</label>
+          <input type="password" id="teacher-password" class="form-input"
+                 placeholder="Введите пароль" autocomplete="current-password" />
+        </div>
+        <button class="btn btn-primary btn-block" id="btn-teacher-enter">Войти в панель</button>
+        <p id="teacher-login-error" class="error-msg" style="display:none">Неверный пароль</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-class — Выбор класса
+  ══════════════════════════════════════════ -->
+  <div id="screen-class" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-login">← Назад</button>
+      <h2 class="screen-title">Выберите ваш класс</h2>
+    </div>
+    <div class="screen-body">
+      <div class="class-grid" id="class-list">
+        <!-- Заполняется динамически -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-student — Список учеников
+  ══════════════════════════════════════════ -->
+  <div id="screen-student" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-class">← Назад</button>
+      <h2 class="screen-title" id="student-screen-title">Ученики</h2>
+    </div>
+    <div class="screen-body">
+      <div class="search-box">
+        <input type="search" id="student-search" class="form-input search-input"
+               placeholder="🔍 Поиск по фамилии или имени..." autocomplete="off" />
+      </div>
+      <div class="student-grid" id="student-list">
+        <!-- заполняется app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-menu — Меню ученика
+  ══════════════════════════════════════════ -->
+  <div id="screen-menu" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" id="btn-logout">← Сменить ученика</button>
+      <div class="student-info">
+        <span class="student-name" id="menu-student-name">Ученик</span>
+        <span class="student-class" id="menu-student-class">7-А</span>
+      </div>
+      <div id="update-indicator" class="update-indicator"></div>
+    </div>
+    <div class="screen-body">
+      <div class="stats-overview-banner">
+        <div class="stat-pill">⌨️ Лучшая скорость: <strong id="menu-best-speed">—</strong></div>
+        <div class="stat-pill">🎯 Выполнено сессий: <strong id="menu-sessions-count">0</strong></div>
+        <div class="stat-pill level-pill" id="menu-level-badge">Уровень 1: Новичок</div>
+        <div class="stat-pill xp-pill" id="menu-xp-badge">⭐ 0 XP</div>
+      </div>
+
+      <div class="xp-progress-wrapper" id="menu-xp-wrapper">
+        <div class="xp-progress-header">
+          <span class="xp-level-title" id="menu-xp-level-title">Новичок</span>
+          <span class="xp-ratio" id="menu-xp-ratio">0 / 100 XP</span>
+        </div>
+        <div class="xp-progress-bar">
+          <div class="xp-progress-fill" id="menu-xp-fill" style="width: 0%;"></div>
+        </div>
+        <div class="xp-progress-sub" id="menu-xp-sub">До след. уровня: 100 XP</div>
+      </div>
+
+      <div class="menu-badges-strip" id="menu-badges-strip"></div>
+
+      <h2 class="screen-title">Выберите учебный модуль</h2>
+      <div class="module-grid has-5-modules">
+        <button class="btn btn-module" data-module="typing">
+          <span class="module-icon">⌨️</span>
+          <span class="module-name">Слепая печать</span>
+          <span class="module-desc">Клавиатурный тренажёр: ряды, слова и предложения</span>
+        </button>
+        <button class="btn btn-module" data-module="mouse" id="btn-module-mouse">
+          <span class="module-icon">🖱️</span>
+          <span class="module-name">Тренажёр мыши</span>
+          <span class="module-desc">Клик, даблклик, контекстное меню, drag-and-drop и наведение</span>
+        </button>
+        <button class="btn btn-module" data-module="theory">
+          <span class="module-icon">📚</span>
+          <span class="module-name">Материалы уроков</span>
+          <span class="module-desc">Слайды и темы презентаций учебной программы</span>
+        </button>
+        <button class="btn btn-module" data-module="test">
+          <span class="module-icon">✅</span>
+          <span class="module-name">Мини-тесты</span>
+          <span class="module-desc">Проверка теоретических знаний по информатике</span>
+        </button>
+        <button class="btn btn-module" data-module="stats">
+          <span class="module-icon">📊</span>
+          <span class="module-name">Мои результаты</span>
+          <span class="module-desc">Подробная статистика скорости, точности и тестов</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-typing — Тренажёр печати
+  ══════════════════════════════════════════ -->
+  <div id="screen-typing" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-menu">← В меню</button>
+      <h2 class="screen-title">Тренажёр слепой печати</h2>
+    </div>
+    <div class="screen-body">
+      <div id="typing-container" class="module-container">
+        <!-- заполняется modules/typing.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-mouse — Тренажёр мыши
+  ══════════════════════════════════════════ -->
+  <div id="screen-mouse" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-menu">← В меню</button>
+      <h2 class="screen-title">Интерактивный тренажёр мыши</h2>
+      <div class="mouse-header-controls">
+        <button id="mouse-mute-btn" class="btn btn-icon-mute" title="Звуковые эффекты" aria-label="Включить / отключить звук">
+          <span id="mouse-mute-icon">🔊</span>
+        </button>
+      </div>
+    </div>
+    <div class="screen-body mouse-screen-body">
+      <div id="mouse-container" class="module-container mouse-trainer-container">
+        <!-- заполняется modules/mouse.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-materials — Материалы и презентации
+  ══════════════════════════════════════════ -->
+  <div id="screen-materials" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-menu">← В меню</button>
+      <h2 class="screen-title">Материалы уроков (презентации)</h2>
+    </div>
+    <div class="screen-body">
+      <div id="materials-container" class="materials-grid">
+        <!-- Заполняется app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-tests — Мини-тесты
+  ══════════════════════════════════════════ -->
+  <div id="screen-tests" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-menu">← В меню</button>
+      <h2 class="screen-title">Мини-тесты по информатике</h2>
+    </div>
+    <div class="screen-body">
+      <div id="tests-container" class="module-container">
+        <!-- Заполняется app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-results — Мои результаты
+  ══════════════════════════════════════════ -->
+  <div id="screen-results" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-menu">← В меню</button>
+      <h2 class="screen-title">Моя статистика</h2>
+    </div>
+    <div class="screen-body">
+      <div id="results-container" class="results-wrapper">
+        <!-- Заполняется app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       #screen-teacher — Панель учителя
+  ══════════════════════════════════════════ -->
+  <div id="screen-teacher" class="screen">
+    <div class="screen-header">
+      <button class="btn btn-back" data-back="screen-login">← Выйти из панели учителя</button>
+      <h2 class="screen-title">Панель учителя (журнал успеваемости)</h2>
+    </div>
+    <div class="screen-body">
+      <div id="teacher-container" class="module-container">
+        <!-- заполняется modules/teacher.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно для слайдов и просмотра -->
+  <div id="app-modal" class="modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-label="Просмотр материала"></div>
+
+  <!-- FocusGuard: Pre-Start Warning Modal -->
+  <div id="focusguard-warning-modal" class="modal-overlay focusguard-modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="fg-warn-title">
+    <div class="modal-box fg-modal-box">
+      <div class="modal-header fg-warn-header">
+        <h2 id="fg-warn-title">⚠️ Внимание! Контроль фокуса</h2>
+      </div>
+      <div class="modal-body fg-modal-body">
+        <div class="fg-icon-wrap">🛡️</div>
+        <p class="fg-warn-text">
+          Выход с вкладки, сворачивание окна или переключение в другую программу/игру 
+          <strong>немедленно аннулирует результат</strong> текущей попытки (0 XP)!
+        </p>
+        <p class="fg-warn-subtext" id="fg-warn-module-title">Выполняйте задание непрерывно до появления экрана с результатами.</p>
+        <div class="fg-fullscreen-row">
+          <button id="fg-btn-fullscreen" class="btn btn-secondary btn-sm" type="button">⛶ Во весь экран</button>
+        </div>
+      </div>
+      <div class="modal-actions fg-modal-actions">
+        <button id="fg-btn-start" class="btn btn-primary btn-lg" type="button">▶ Я готов, начать</button>
+        <button id="fg-btn-cancel" class="btn btn-outline" type="button">Отмена</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FocusGuard: Voided Attempt Modal -->
+  <div id="focusguard-void-modal" class="modal-overlay focusguard-modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="fg-void-title">
+    <div class="modal-box fg-modal-box fg-void-box">
+      <div class="modal-header fg-void-header">
+        <h2 id="fg-void-title">🚫 Попытка аннулирована!</h2>
+      </div>
+      <div class="modal-body fg-modal-body">
+        <div class="fg-icon-wrap fg-void-icon">⚠️</div>
+        <p class="fg-void-main">Зафиксирован выход из окна или переключение вкладки.</p>
+        <p class="fg-void-desc">
+          По правилам дисциплины результат текущей попытки полностью аннулирован (начислено 0 XP).
+          Факт нарушения зафиксирован в журнале учителя.
+        </p>
+        <div class="fg-violation-stat">
+          <span>Всего нарушений фокуса на этом ПК:</span>
+          <strong id="fg-violation-count">1</strong>
+        </div>
+      </div>
+      <div class="modal-actions fg-modal-actions">
+        <button id="fg-btn-retry" class="btn btn-primary" type="button">🔄 Начать заново</button>
+        <button id="fg-btn-menu" class="btn btn-secondary" type="button">🏠 В главное меню</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- AutoUpdate Notification Modal -->
+  <div id="update-modal" class="modal-overlay update-modal" style="display:none;" role="dialog" aria-modal="true"></div>
+
+  <!-- Toast Container for Achievements and Alerts -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- JS (порядок: данные -> сервисы -> контроллер -> модули) -->
+  <script src="data/students.js"></script>
+  <script src="data/content.js"></script>
+  <script src="modules/gamification.js"></script>
+  <script src="modules/autoupdate.js"></script>
+  <script src="modules/telemetry.js"></script>
+  <script src="modules/focusguard.js"></script>
+  <script src="app.js"></script>
+  <script src="modules/typing.js"></script>
+  <script src="modules/mouse.js"></script>
+  <script src="modules/teacher.js"></script>
+</body>
+</html>
